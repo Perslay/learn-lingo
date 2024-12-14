@@ -1,5 +1,7 @@
 export const Loader = () => {
-  <>
-    <p>Loading...</p>
-  </>;
+  return (
+    <>
+      <p>Loading...</p>
+    </>
+  );
 };

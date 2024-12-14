@@ -1,0 +1,58 @@
+.loginDiv {
+  background-color: var(--color-dark-transparent);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.loginWindow {
+  background-color: var(--color-white);
+  border-radius: 15px;
+  left: 50%;
+  height: 300px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+}
+
+.heading {
+  letter-spacing: -0.02em;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  color: var(--color-dark-transparent);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.label {
+  display: none;
+}
+
+.input {
+  border: 1px solid var(--color-gray-transparent);
+  border-radius: 6px;
+  padding: 8px 9px;
+  font-size: 14px;
+}
+
+.input::placeholder {
+  color: var(--color-dark);
+  opacity: 1;
+}
+
+.submit {
+  background-color: var(--color-green);
+  border: none;
+  border-radius: 6px;
+  color: var(--color-dark);
+  font-weight: 600;
+  padding: 8px;
+  width: 100%;
+}

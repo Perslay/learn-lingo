@@ -1,0 +1,155 @@
+.header {
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  width: 320px;
+}
+
+.headerContent {
+  align-items: center;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  /* order: -1; */
+}
+
+.navDiv {
+  background-color: var(--color-white);
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateX(-130%);
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+/* .navList {} */
+
+.navDivOpen {
+  transform: translateX(0);
+}
+
+.navDivClosed {
+  transform: translateX(-130%);
+}
+
+.navOpenButton {
+  align-items: center;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  padding: 3px 6px;
+  transition: background-color 200ms ease;
+}
+
+.navOpenButton:hover,
+.navOpenButton:focus {
+  background-color: var(--color-lightgray);
+  outline: none;
+}
+
+.navCloseButton {
+  background: none;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  margin: 20px 20px 0 auto;
+  padding: 6px;
+  transition: background-color 200ms ease;
+}
+
+.navCloseButton:hover,
+.navCloseButton:focus {
+  background-color: var(--color-lightgray);
+  outline: none;
+}
+
+.closeIcon {
+  stroke: var(--color-dark);
+}
+
+.navLogo {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  gap: 8px;
+  letter-spacing: -0.02em;
+  padding: 20px;
+}
+
+.navListItem {
+  border-bottom: 1px solid var(--color-lightgray);
+  font-size: 14px;
+}
+
+.navListItem:first-child {
+  border-top: 1px solid var(--color-lightgray);
+}
+
+.navLink {
+  color: var(--color-dark);
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: background-color 200ms ease;
+}
+
+.navLink:hover,
+.navLink:focus {
+  background-color: var(--color-lightgray);
+  outline: none;
+}
+
+.logo {
+  display: none;
+}
+
+.headerRight {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+}
+
+.loginButton {
+  background: none;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  padding: 3px 6px;
+  transition: background-color 200ms ease;
+}
+
+.loginButton:hover,
+.loginButton:focus {
+  background-color: var(--color-lightgray);
+  outline: none;
+}
+
+.loginParagraph {
+  display: none;
+}
+
+.registrationButton {
+  background-color: var(--color-dark);
+  border: none;
+  border-radius: 6px;
+  transition: box-shadow 200ms ease;
+  color: var(--color-white);
+  padding: 7px 20px;
+}
+
+.registrationButton:hover,
+.registrationButton:focus {
+  box-shadow: 0 0 5px 2px var(--color-dark);
+  outline: none;
+}
